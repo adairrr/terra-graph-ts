@@ -275,6 +275,10 @@ export class Bytes extends ByteArray {
   static empty(): Bytes {
     return changetype<Bytes>(ByteArray.empty())
   }
+
+  static toUint8Array(bts: Bytes): Uint8Array {
+    return changetype<Uint8Array>(bts);
+  }
 }
 
 /**

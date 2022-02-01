@@ -5,7 +5,8 @@ export * from './chain/ethereum'
 // NEAR support
 export * from './chain/near'
 // Tendermint support
-export * from './chain/tendermint'
+export * from './chain/tendermint/tendermint'
+export * from './chain/tendermint/cosmos'
 // Regular re-exports
 export * from './common/numbers'
 export * from './common/collections'

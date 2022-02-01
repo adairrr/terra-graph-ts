@@ -1,5 +1,5 @@
-import '../common/eager_offset'
-import { Bytes } from '../common/collections'
+import '../../common/eager_offset'
+import { Bytes } from '../../common/collections'
 
 export namespace tendermint {
   export enum SignedMsgType {
@@ -18,9 +18,9 @@ export namespace tendermint {
 
   export class EventData {
     public event: Event
-    public block: EventList
+    public block: EventBlock
 
-    constructor(event: Event, block: EventList) {
+    constructor(event: Event, block: EventBlock) {
       this.event = event
       this.block = block
     }

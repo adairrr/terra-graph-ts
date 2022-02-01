@@ -3,7 +3,7 @@ import { Bytes, TypedMapEntry, Entity, TypedMap, Result, Wrapped } from '../comm
 import { JSONValue, Value } from '../common/value'
 import { ethereum } from '../chain/ethereum'
 import { near } from '../chain/near'
-import { tendermint } from '../chain/tendermint'
+import { tendermint } from '../chain/tendermint/tendermint'
 
 export enum TypeId {
   String = 0,
