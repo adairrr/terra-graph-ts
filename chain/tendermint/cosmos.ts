@@ -50,7 +50,7 @@ export namespace cosmos {
               break;
 
             case 3:
-              if ((tag & 7) === 2) {
+              if ((tag & 7) === 2 && tag !== 26) {
                 const repeatedEnd: usize = reader.ptr + reader.uint32();
                 while (reader.ptr < repeatedEnd) {
                   message.signatures.push(reader.bytes());
@@ -3977,7 +3977,7 @@ export namespace cosmos {
               break;
 
             case 4:
-              if ((tag & 7) === 2) {
+              if ((tag & 7) === 2 && tag !== 26) {
                 const repeatedEnd: usize = reader.ptr + reader.uint32();
                 while (reader.ptr < repeatedEnd) {
                   message.connection_hops.push(reader.string());
@@ -4236,7 +4236,7 @@ export namespace cosmos {
               break;
 
             case 2:
-              if ((tag & 7) === 2) {
+              if ((tag & 7) === 2 && tag !== 26) {
                 const repeatedEnd: usize = reader.ptr + reader.uint32();
                 while (reader.ptr < repeatedEnd) {
                   message.features.push(reader.string());
@@ -4703,8 +4703,6 @@ export namespace cosmos {
       VOTE_OPTION_NO = 3,
       VOTE_OPTION_NO_WITH_VETO = 4,
     }
-
-
 
     export function decodeAny(data: Uint8Array): Any {
       return Protobuf.decode<Any>(data, Any.decode)

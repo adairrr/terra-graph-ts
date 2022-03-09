@@ -4,13 +4,6 @@
 
 "as-proto@file:../as-proto/packages/as-proto":
   version "0.2.0"
-  dependencies:
-    as-wasi "^0.4.6"
-
-as-wasi@^0.4.6:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/as-wasi/-/as-wasi-0.4.6.tgz#e32f1e65ff1bc5abe910362a8024019143910f26"
-  integrity sha512-HFWdxLVHrOfchf/M+gE2IczsHBkWXqekZZfHYmDj6WP1UnpQC4k44OeyjqmSwC/db1tppEwCUssDCuFGnMdJZw==
 
 assemblyscript@0.19.10:
   version "0.19.10"
